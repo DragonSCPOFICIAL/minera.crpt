@@ -2,6 +2,8 @@ import time
 import mining
 import hashlib
 
+# Link para o módulo mining: https://github.com/DragonSCPOFICIAL/minera.crpt/blob/main/mining.py
+
 # Menu principal
 def menu():
     while True:
@@ -22,6 +24,9 @@ def menu():
 
 # Iniciar mineração
 def iniciar_mineracao():
+    print("Preparando para minerar...")
+    time.sleep(1)  # Tempo de carregamento simulado de 1 segundo
+
     blocks = [{'index': 1, 'previous_hash': '0', 'timestamp': int(time.time()), 'data': 'Dados de exemplo', 'nonce': 0}]
     difficulty = 1000000
     hash_function = hashlib.sha256
@@ -38,6 +43,8 @@ def iniciar_mineracao():
 
 # Iniciar mineração mil vezes
 def iniciar_mineracao_mil_vezes():
+    print("Iniciando mineração mil vezes...")
+    time.sleep(1)  # Tempo de carregamento simulado de 1 segundo
     for _ in range(1000):
         iniciar_mineracao()
 
