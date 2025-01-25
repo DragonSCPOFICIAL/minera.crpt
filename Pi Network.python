@@ -1,11 +1,3 @@
-pkg update
-pkg install python
-pkg install git
-pip install requests
-
-# Script de mineração (um exemplo genérico)
-echo "Iniciando mineração..."
-python << EOF
 import requests
 import time
 
@@ -33,4 +25,3 @@ def mine():
 while True:
     mine()
     time.sleep(10)  # Aguarda 10 segundos antes de fazer outra solicitação
-EOF
