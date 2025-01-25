@@ -2,7 +2,7 @@ import requests
 import time
 
 # Alvo do servidor (deve ser ajustado conforme o servidor da mineração)
-url = "https://socialchain.app/mining"
+url = "socialchain.app"
 headers = {
     "Host": "socialchain.app:443",
     "Proxy-Connection": "keep-alive",
